@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+
+
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="top"
+		android:layout_marginStart="20dp"
+		android:layout_marginEnd="20dp"
+		android:id="@+id/relat1">
+
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/find_title"
+			android:textSize="20sp"
+			android:layout_centerHorizontal="true"
+			android:textStyle="bold"
+			android:id="@+id/title_main_title"
+			android:layout_marginTop="10dp"/>
+
+
+	</RelativeLayout>
+
+	<TextView
+		android:layout_marginStart="20dp"
+		android:layout_marginEnd="20dp"
+		android:textColor="@color/purple"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/second_title"
+		android:textSize="15sp"
+		android:layout_centerHorizontal="true"
+		android:textStyle="italic"
+		android:layout_below="@+id/relat1"
+		android:id="@+id/title_second_title"
+		android:layout_marginTop="50dp"/>
+
+	<RelativeLayout
+		android:id="@+id/relat2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:layout_below="@+id/title_second_title"
+		android:layout_marginStart="30dp"
+		android:layout_marginEnd="30dp"
+		android:layout_marginTop="20dp">
+
+		<!--	Greek	-->
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Ελληνικα"
+			android:textColor="@color/blueDark"
+			android:id="@+id/spinner_text_greek"/>
+
+		<Spinner
+			android:id="@+id/spinner_greek"
+			android:layout_width="55dp"
+			android:layout_height="50dp"
+			android:gravity="center"
+			android:layout_marginTop="10dp"
+			android:background="@drawable/border"
+			android:entries="@array/spinner_title_letter_greek"
+			android:layout_below="@+id/spinner_text_greek"
+			/>
+
+		<Button
+			android:id="@+id/btn_greek"
+			android:layout_width="55dp"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/spinner_greek"
+			android:layout_marginTop="10dp"
+			android:background="@color/Green"
+			android:text="@string/Ok"/>
+
+
+		<!--	English	-->
+		<TextView
+			android:textColor="@color/blueDark"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Αγγλικά"
+			android:layout_centerHorizontal="true"
+			android:layout_marginStart="130dp"
+			android:id="@+id/spinner_text_english"/>
+
+		<Spinner
+			android:id="@+id/spinner_english"
+			android:layout_width="55dp"
+			android:layout_height="50dp"
+			android:layout_marginTop="10dp"
+			android:layout_alignStart="@+id/spinner_text_english"
+			android:background="@drawable/border"
+			android:drawSelectorOnTop="true"
+			android:entries="@array/spinner_title_letter_english"
+			android:layout_below="@+id/spinner_text_english"/>
+
+		<Button
+			android:id="@+id/btn_english"
+			android:layout_width="55dp"
+			android:layout_alignStart="@id/spinner_english"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/spinner_english"
+			android:layout_marginTop="10dp"
+			android:background="@color/Green"
+			android:text="@string/Ok"/>
+
+		<!--	Numeric	-->
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Αριθμοί"
+			android:textColor="@color/blueDark"
+			android:id="@+id/spinner_text_numeric"
+			android:layout_alignParentRight="true"/>
+
+		<Spinner
+			android:id="@+id/spinner_numeric"
+			android:layout_width="55dp"
+			android:layout_height="50dp"
+			android:layout_marginTop="10dp"
+			android:background="@drawable/border"
+			android:layout_below="@+id/spinner_text_numeric"
+			android:layout_alignStart="@+id/spinner_text_numeric"
+			android:drawSelectorOnTop="true"
+			android:entries="@array/spinner_title_letter_numeric"/>
+
+		<Button
+			android:id="@+id/btn_numeric"
+			android:layout_width="55dp"
+			android:layout_height="wrap_content"
+			android:layout_alignStart="@id/spinner_numeric"
+			android:layout_below="@id/spinner_numeric"
+			android:layout_marginTop="10dp"
+			android:background="@color/Green"
+			android:text="@string/Ok"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginTop="50dp"
+		android:layout_marginEnd="30dp"
+		android:layout_marginStart="30dp"
+		android:layout_below="@+id/relat2"
+		android:layout_marginBottom="30dp">
+
+		<TextView
+			android:textStyle="italic"
+			android:textColor="@color/purple"
+			android:layout_centerHorizontal="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/search_title_text"
+			android:text="@string/search_by_title"
+			android:layout_marginStart="35dp"
+			android:textSize="15sp"/>
+
+		<EditText
+			android:layout_marginTop="20dp"
+			android:layout_centerHorizontal="true"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/border"
+			android:id="@+id/search_title_edit"
+			android:layout_below="@+id/search_title_text"
+			android:hint="@string/search_by_title_editText"
+			android:inputType="text"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/btnSearch_title"
+			android:layout_below="@+id/search_title_edit"
+			android:layout_marginTop="20dp"
+			android:background="@color/Green"
+			android:text="@string/btnSearch"
+			android:layout_alignEnd="@+id/search_title_edit"
+			android:layout_alignStart="@+id/search_title_edit"/>
+
+	</RelativeLayout>
+
+
+</RelativeLayout>

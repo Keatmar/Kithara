@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<menu xmlns:android = "http://schemas.android.com/apk/res/android">
+
+	<group android:checkableBehavior = "single">
+
+		<item
+			android:id = "@+id/title_nav"
+			android:checked = "false"
+			android:icon = "@drawable/ic_search_song"
+			android:title = "@string/title" />
+
+		<item
+			android:id = "@+id/import_song_nav"
+			android:checked = "false"
+			android:icon = "@mipmap/ic_save_song"
+			android:title = "@string/import_songBasic" />
+	</group>
+</menu>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:orientation="vertical"
+	android:layout_height="match_parent"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	tools:context="com.example.ntinos.kithara.MainActivity"
+	tools:showIn="@layout/app_bar_main">
+
+	<ImageView
+		android:orientation="vertical"
+		android:id="@+id/image_app"
+		android:layout_width="80dp"
+		android:layout_height="80dp"
+		android:layout_alignParentTop="true"
+		android:src="@mipmap/ic_app"
+		android:contentDescription="@string/app_name"/>
+
+	<TextView
+		android:id="@+id/Welcome"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/Welcome"
+		android:textSize="20sp"
+		android:textStyle="bold"
+		android:layout_alignParentTop="true"
+		android:layout_toEndOf="@+id/image_app"/>
+
+	<TextView
+		android:id="@+id/Advice_1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/Advice_1"
+		android:layout_below="@+id/Welcome"
+		android:layout_toEndOf="@+id/image_app"/>
+
+	<TextView
+		android:id="@+id/Advice_2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="71dp"
+		android:text="@string/Advice_2"
+		android:layout_below="@+id/image_app"
+		android:layout_alignParentStart="true"/>
+
+	<TextView
+		android:id="@+id/Advice_3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/Advice_2"
+		android:layout_marginTop="50dp"
+		android:text="@string/Advice_3"/>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+		  android:keyWidth="8%p"
+		  android:keyHeight="9%p">
+
+	<Row>
+		<Key android:codes="57"    	android:keyLabel="B"	android:keyEdgeFlags="left"/>
+		<Key android:codes="55"    	android:keyLabel="A"/>
+		<Key android:codes="58"    	android:keyLabel="C"/>
+		<Key android:codes="60"    	android:keyLabel="D"/>
+		<Key android:codes="63"    	android:keyLabel="F"/>
+		<Key android:codes="65"    	android:keyLabel="G"	/>
+		<Key android:codes="69"		android:keyIcon="@mipmap/ic_backspace_delete"	android:horizontalGap="6%p" android:keyEdgeFlags="right"/>
+	</Row>
+	<Row>
+		<Key android:codes="62"    	android:keyLabel="E"	android:keyEdgeFlags="left"/>
+		<Key android:codes="56"    	android:keyLabel="A#"/>
+		<Key android:codes="59"    	android:keyLabel="C#"/>
+		<Key android:codes="61"    	android:keyLabel="D#"/>
+		<Key android:codes="64"		android:keyLabel="F#"/>
+		<Key android:codes="66"   	android:keyLabel="G#"	/>
+		<Key android:codes="71"		android:keyIcon="@mipmap/ic_new_line"	android:horizontalGap="6%p" android:keyEdgeFlags="right"/>
+	</Row>
+
+	<Row>
+		<Key android:codes="67"		android:keyLabel="m"	android:keyWidth="7%p" android:keyEdgeFlags="left"/>
+		<Key android:codes="74"		android:keyLabel="b"	android:keyWidth="7%p"/>
+		<Key android:codes="70"		android:keyWidth="22%p"	/>
+		<Key android:codes="73"		android:keyLabel="dim"	android:keyWidth="7%p"/>
+		<Key android:codes="68"		android:keyLabel="7"	android:keyWidth="7%p"  />
+		<Key android:codes="72"		android:keyIcon="@mipmap/ic_keyboard_hide"	android:horizontalGap="4%p" android:keyEdgeFlags="right"/>
+	</Row>
+</Keyboard>

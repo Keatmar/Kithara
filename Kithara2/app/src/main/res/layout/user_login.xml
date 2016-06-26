@@ -1,0 +1,55 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout
+	xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:orientation = "vertical"
+	android:layout_height = "match_parent"
+	android:background = "#fff"
+	android:layout_width = "match_parent"
+	android:gravity = "center">
+
+
+	<EditText
+		android:id = "@+id/txtUsername"
+		android:hint = "@string/Email"
+		android:layout_height = "wrap_content"
+		android:layout_width = "250dp"
+		android:inputType = "textEmailAddress"
+		android:layout_alignParentStart = "true"/>
+
+	<EditText
+		android:id = "@+id/txtPassword"
+		android:hint = "@string/Password"
+		android:layout_height = "wrap_content"
+		android:inputType = "textPassword"
+		android:layout_width = "250dp"
+		android:layout_below = "@+id/txtUsername"
+		android:layout_alignStart = "@+id/txtUsername"/>
+
+	<Button
+		android:id = "@+id/btnLogin"
+		android:layout_width = "115dp"
+		android:layout_height = "wrap_content"
+		android:text = "@string/Login"
+		android:layout_below = "@+id/txtPassword"
+		android:layout_alignStart = "@+id/txtPassword"
+		android:background = "@color/Green"/>
+
+	<Button
+		android:id = "@+id/btnCancel"
+		android:layout_width = "115dp"
+		android:layout_height = "wrap_content"
+		android:text = "@string/Cancel"
+		android:layout_below = "@+id/txtPassword"
+		android:layout_alignEnd = "@+id/txtPassword"
+		android:background = "@color/Red"/>
+
+	<Button
+		android:id = "@+id/btnRegister"
+		android:layout_width = "250dp"
+		android:layout_height = "wrap_content"
+		android:text = "@string/btnRegister"
+		android:layout_below = "@+id/btnLogin"
+		android:background = "@color/blue"
+		android:layout_marginTop = "10dp"/>
+
+</RelativeLayout>

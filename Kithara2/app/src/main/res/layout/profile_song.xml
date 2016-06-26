@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="20dp"
+		android:id="@+id/detail">
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:layout_marginEnd="10dp"
+			android:layout_marginTop="10dp">
+
+
+
+
+			</RelativeLayout>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/title"
+			android:layout_alignParentStart="true"
+			android:textStyle="bold"
+			android:textSize="25sp"/>
+
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/Preamble"
+			android:layout_below="@+id/title"
+			android:textColor="@color/Red"
+			android:textSize="15sp"
+			android:layout_marginTop="10dp"/>
+
+
+	</RelativeLayout>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="350dp"
+		android:layout_below="@+id/detail"
+		android:id="@+id/Lyrics">
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/layout"
+			android:layout_marginStart="20dp"
+			android:layout_marginEnd="20dp">
+
+
+		</RelativeLayout>
+	</ScrollView>
+
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="25dp"
+		android:layout_marginStart="20dp"
+		android:layout_marginEnd="20dp"
+		android:layout_below="@+id/Lyrics"
+		android:layout_above="@+id/Buttons"
+		android:layout_centerHorizontal="true">
+
+		<!-- Versification	-->
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/Versification"
+			android:id="@+id/versification"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="/"
+			android:id="@+id/slash_versification"
+
+			android:layout_toEndOf="@+id/versification"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/versification_text"
+			android:textColor="@color/purple"
+			android:layout_alignParentTop="true"
+			android:layout_toEndOf="@+id/slash_versification"/>
+
+
+		<!--	Music	-->
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/Music"
+			android:id="@+id/Music"
+			android:layout_below="@+id/versification_text"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="/"
+			android:id="@+id/slash_music"
+			android:layout_below="@+id/versification_text"
+			android:layout_toEndOf="@+id/Music"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/Music_text"
+			android:textColor="@color/purple"
+			android:text="sdsds"
+			android:layout_below="@+id/versification"
+			android:layout_toEndOf="@+id/slash_music"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/transpose"
+			android:textColor="@color/purple"
+			android:layout_alignParentRight="true"
+			android:id="@+id/textView"/>
+
+
+		<Spinner
+			android:layout_below="@+id/textView"
+			android:background="@drawable/border"
+			android:layout_width="60dp"
+			android:layout_height="30dp"
+			android:id = "@+id/transpose"
+			android:gravity="center"
+			android:entries="@array/transpose"
+			android:layout_alignParentRight="true"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width = "match_parent"
+		android:layout_height = "wrap_content"
+		android:id="@+id/Buttons"
+		android:layout_alignParentBottom = "true"
+		android:layout_marginEnd = "20dp"
+		android:layout_marginStart = "20dp"
+		android:layout_marginBottom = "20dp">
+		<!--	Buttons	-->
+
+
+
+		<Button
+			android:layout_width = "115dp"
+			android:layout_height = "wrap_content"
+			android:id = "@+id/btnBack"
+			android:text = "@string/back"
+			android:background = "@color/Red"
+			/>
+
+
+	</RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout
+	xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:layout_width = "match_parent"
+	android:layout_height = "match_parent"
+	android:orientation = "vertical">
+
+
+	<RelativeLayout
+		android:orientation = "horizontal"
+		android:layout_width = "match_parent"
+		android:layout_height = "match_parent"
+		android:layout_marginStart = "10dp"
+		android:layout_marginBottom="100dp"
+		android:layout_marginEnd = "10dp">
+
+		<!--	Preamble	-->
+		<TextView
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content"
+			android:id = "@+id/song_preamble_import"
+			android:text = "@string/song_preamble_import"
+			android:textSize = "15sp"
+			android:layout_marginTop = "10dp"
+			android:layout_alignStart = "@+id/song_preamble_import_edit"
+			android:layout_marginStart = "3dp"/>
+
+
+		<EditText
+			android:id = "@+id/song_preamble_import_edit"
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content"
+			android:gravity = "top|start"
+			android:background = "@drawable/border"
+			android:labelFor = "@id/song_preamble_import_edit"
+			android:inputType = "textMultiLine"
+			android:layout_marginStart="20dp"
+			android:layout_marginEnd="20dp"
+			android:layout_below="@+id/song_preamble_import"/>
+
+		<!-- Lyrics -->
+
+		<TextView
+			android:id = "@+id/song_lyrics"
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content"
+			android:text = "@string/song_lyrics"
+			android:layout_marginStart = "80dp"
+			android:layout_below="@+id/song_preamble_import_edit"
+			/>
+
+		<EditText
+			android:layout_width = "match_parent"
+			android:layout_height = "300dp"
+			android:gravity="start|top"
+			android:background = "@drawable/border"
+			android:id = "@+id/song_lyrics_edit"
+			android:labelFor = "@+id/song_lyrics_edit"
+			android:inputType = "textMultiLine"
+			android:scrollbars = "vertical"
+			android:layout_below="@+id/song_lyrics"
+			android:layout_marginStart="20dp"
+			android:layout_marginEnd="20dp"/>
+
+	</RelativeLayout>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height= "wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginStart="20dp"
+		android:layout_marginEnd="20dp"
+		android:layout_marginBottom="20dp"
+		android:layout_alignParentBottom="true">
+
+		<Button
+			android:layout_width = "115dp"
+			android:layout_height = "wrap_content"
+			android:id = "@+id/import_song_back"
+			android:text = "@string/back"
+			android:background = "@color/Red"
+			android:layout_alignParentBottom="true"
+			/>
+
+
+		<Button
+			android:layout_width = "115dp"
+			android:layout_height = "wrap_content"
+			android:id = "@+id/import_song_next"
+			android:text = "@string/next"
+			android:background = "@color/Green"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentEnd = "true"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width = "match_parent"
+		android:layout_height = "wrap_content"
+		android:layout_alignParentBottom="true">
+
+		<android.inputmethodservice.KeyboardView
+			android:gravity = "center"
+			android:fitsSystemWindows="true"
+			android:id = "@+id/keyboard_cordless"
+			android:layout_width = "match_parent"
+			android:layout_height = "match_parent"
+			android:focusable = "true"
+			android:layout_alignParentBottom="true"
+			android:focusableInTouchMode = "true"
+			android:visibility = "gone"
+			android:background = "@color/blue_dark"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>

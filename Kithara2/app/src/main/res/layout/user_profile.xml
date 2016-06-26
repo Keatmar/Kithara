@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_marginBottom="20dp"
+	android:layout_marginEnd="20dp"
+	android:layout_marginStart="20dp"
+	android:layout_marginTop="20dp"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="250dp"
+		android:id="@+id/Profile">
+
+		<ImageView
+			android:id="@+id/image_user"
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+			android:layout_alignParentTop="true"
+			android:layout_toEndOf="@+id/profile_username"
+			android:src="@mipmap/ic_user_no_icon"/>
+
+		<!-- UserName -->
+		<TextView
+			android:id="@+id/Username_Profile"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/image_user"
+			android:layout_marginRight="20dp"
+			android:layout_marginTop="20dp"
+			android:text="@string/Username_Profile"
+			android:textSize="20sp"/>
+
+
+		<TextView
+			android:id="@+id/profile_username"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignTop="@+id/Username_Profile"
+			android:layout_toEndOf="@+id/Username_Profile"
+			android:textSize="20sp"/>
+
+
+		<!-- Password -->
+		<TextView
+			android:id="@+id/Password_Profile"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/Username_Profile"
+			android:layout_marginTop="10dp"
+			android:text="@string/Password_Profile"
+			android:textSize="20sp"/>
+
+		<TextView
+			android:id="@+id/profile_password"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignStart="@+id/profile_username"
+			android:layout_below="@+id/profile_username"
+			android:layout_marginTop="10dp"
+			android:inputType="textPassword"
+			android:textSize="20sp"/>
+
+
+		<!-- Email -->
+		<TextView
+			android:id="@+id/Email_Profile"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/Password_Profile"
+			android:layout_marginTop="10dp"
+			android:text="@string/Email_Profile"
+			android:textSize="20sp"/>
+
+
+		<TextView
+			android:id="@+id/profile_email"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignStart="@+id/profile_username"
+			android:layout_alignTop="@+id/Email_Profile"
+			android:inputType="textEmailAddress"
+			android:textSize="20sp"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@+id/Buttons"
+		android:layout_below="@+id/Profile">
+
+		<TextView
+			android:textSize="20sp"
+			android:layout_centerHorizontal="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/purple"
+			android:text="@string/My_Songs"
+			android:id="@+id/MySongs"
+			android:layout_alignParentTop="true"/>
+
+		<ScrollView
+			android:layout_below="@+id/MySongs"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/scrollView">
+
+			<RelativeLayout
+				android:id="@+id/result_title"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+
+			</RelativeLayout>
+		</ScrollView>
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/Buttons"
+		android:layout_alignParentBottom="true">
+
+		<Button
+			android:id="@+id/profile_logout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@color/Red"
+			android:text="@string/Logout"/>
+
+		<Button
+			android:id="@+id/btnEdit"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:background="@color/Green"
+			android:text="@string/Edit"/>
+	</RelativeLayout>
+</RelativeLayout>

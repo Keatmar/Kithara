@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+	<color name="Black" >#000</color>
+	<color name="Green">#be0e7e57</color>
+	<color name="Red">#b4f40000</color>
+	<color name="blue">#a64c4cff</color>
+	<color name="gray">#71909090</color>
+	<color name="white">#ffff</color>
+	<color name="blueDark">#de4c4cff</color>
+	<color name="purple">#6100c2</color>
+	<color name="gres">#caefca</color>
+
+	//Keyboard background
+	<color name="blue_dark">#430048</color>
+</resources>

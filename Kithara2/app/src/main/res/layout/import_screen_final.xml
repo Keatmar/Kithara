@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/title"
+		android:textSize="30sp"
+		android:textStyle="bold"
+		android:gravity="center|start"
+		android:layout_centerHorizontal="true"
+		/>
+
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/singer_name"
+		android:layout_below="@+id/title"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginStart="20dp"
+		android:textColor="@color/blue"/>
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/singer_name"
+		android:id="@+id/name"
+		android:layout_marginStart="20dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/music"
+			android:text="@string/Music"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/slass"
+			android:text="/"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/Versification"
+			android:id="@+id/versification"/>
+
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/detail"
+		android:layout_below="@+id/name"
+		android:layout_marginStart="20dp"
+		android:paddingBottom="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/music_name"
+			android:text="sdsds"
+			android:layout_gravity="center_horizontal"
+			android:textColor="@color/blue"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/slass1"
+			android:text="/"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="sdsds"
+			android:id="@+id/versification_name"
+			android:layout_gravity="center_horizontal"
+			android:textColor="@color/blue"/>
+
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/border"
+		android:layout_below="@+id/detail"
+		android:layout_marginStart="10dp"
+		android:layout_marginEnd="10dp"
+		android:id = "@+id/song_view">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/Red"
+			android:id = "@+id/Preamble"
+			/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id = "@+id/lyrics"
+			android:layout_marginTop="20dp"
+			android:layout_below="@+id/Preamble"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width = "match_parent"
+		android:layout_height = "match_parent"
+		android:layout_marginStart="20dp"
+		android:layout_marginEnd="20dp"
+		android:layout_marginBottom="20dp"
+		>
+
+			<Button
+				android:layout_width = "115dp"
+				android:layout_height = "wrap_content"
+				android:id = "@+id/button_back"
+				android:text = "@string/back"
+				android:layout_alignParentBottom="true"
+				android:background = "@color/Red"
+				/>
+
+			<Button
+				android:id = "@+id/button_next"
+				android:layout_width = "115dp"
+				android:layout_height = "wrap_content"
+				android:text = "@string/import_song"
+				android:layout_alignParentEnd ="true"
+				android:layout_alignParentBottom="true"
+				android:background = "@color/Green"/>
+
+		</RelativeLayout>
+</RelativeLayout>
